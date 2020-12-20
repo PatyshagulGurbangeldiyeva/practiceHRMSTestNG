@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [addEmployee]">
+  <listeners>
+    <listener class-name="com.syntax.testBase.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="addEmployee(failed)">
+    <classes>
+      <class name="com.syntax.testCases.AddEmployee">
+        <methods>
+          <include name="addEmployeeWihtPic"/>
+          <include name="setUp"/>
+          <include name="generatereport"/>
+          <include name="writeReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.syntax.testCases.AddEmployee -->
+    </classes>
+  </test> <!-- addEmployee(failed) -->
+</suite> <!-- Failed suite [addEmployee] -->
